@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         grace: ["Covered By Your Grace", "cursive"],
-        man: ["Manrope", "sans-serif"]
+        man: ["Manrope", "sans-serif"],
+        inter: ["Inter", "sans-serif"]
     },
     },
   },
