@@ -7,11 +7,12 @@ const FormSlice = createSlice({
         name:'',
         address:'',
         email:'',
-        phone:''
+        phone:'',
+        unsavedChanges: false,
     },
     reducers:{
         setFormData:(state, action)=>{
-            return {...state, ...action.payload}
+            return {...state, ...action.payload, unsavedChanges: true}
         },
         clearFormData:(state, action)=>{
             return {
@@ -20,11 +21,15 @@ const FormSlice = createSlice({
                 name:'',
                 address:'',
                 email:'',
-                phone:''
+                phone:'',
+                unsavedChanges: false
             }
-        }
+        },
+        setUnsavedChanges: (state, action) => {
+            state.unsavedChanges = action.payload;
+          }
     }
 })
 
-export const {setFormData, clearFormData} = FormSlice.actions;
+export const {setFormData, clearFormData, setUnsavedChanges} = FormSlice.actions;
 export default FormSlice.reducer;
