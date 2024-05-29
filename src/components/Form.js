@@ -1,4 +1,5 @@
 export const Form = () =>{
+
     return(
         <form className="max-w-sm mx-auto border-[#1B3D58] border-l-[0.25rem] border-r-[0.25rem] border-t-[0.25rem] border-b-[0.25rem] p-[5em] rounded-lg shadow-[#F472B6] shadow-lg">
             <div className="mb-5">
