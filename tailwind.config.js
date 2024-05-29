@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        grace: ["Covered By Your Grace", "cursive"],
+        man: ["Manrope", "sans-serif"]
+    },
+    },
   },
   plugins: [],
 }
