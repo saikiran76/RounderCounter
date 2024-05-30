@@ -27,7 +27,7 @@ const FormSlice = createSlice({
         },
         setUnsavedChanges: (state, action) => {
             state.unsavedChanges = action.payload;
-          }
+        }
     }
 })
 

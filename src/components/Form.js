@@ -59,7 +59,7 @@ export const Form = () =>{
                 </div>
                 <label className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
             </div>
-            <button type="submit" onClick={(e)=>handleSubmit(e)} className="rounded-md bg-gray-800 text-white border-[#1B3D58] border-l border-r border-b border-t w-[5rem] p-3 hover:bg-[#36B6EE] duration-500">Submit</button>
+            <button type="submit" onClick={(e)=>handleSubmit(e)} className="rounded-md bg-gray-800 text-white border-[#1B3D58] border-l border-r border-b border-t w-[5rem] p-3 hover:bg-[#36B6EE] duration-500">Save</button>
         </form>
 
     )

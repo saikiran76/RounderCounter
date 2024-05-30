@@ -11,7 +11,9 @@ function App() {
     <>
       <div className='bg-[#0F172A] flex gap-2 mb-3'>
         <Counter/>
-        <Editor/>
+        <Provider store={store}>
+          <Editor/>
+        </Provider>
         {/* <Beizer/> */}
       </div>
       <Provider store={store}>

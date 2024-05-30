@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import FormSlice from "./FormSlice";
+import EditorSlice from "./EditorSlice";
 
 const store = configureStore({
     reducer:{
-        form: FormSlice
+        form: FormSlice,
+        editor: EditorSlice
     }
 })
 
