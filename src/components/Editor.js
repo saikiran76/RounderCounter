@@ -43,14 +43,13 @@ function Editor() {
   return (
     <div className="w-full text-[#fff] border-[#1B3D58] border-l-[0.25rem] border-r-[0.25rem] border-t-[0.25rem] border-b-[0.25rem] overflow-hidden rounded-lg m-3 shadow-[#F472B6] shadow-lg">
       <RichTextEditorProvider editor={editor}>
-        <RichTextField
+        <RichTextField className="h-[30em]"
           controls={
-            <MenuControlsContainer>
-              <MenuSelectHeading />
-              <MenuDivider />
+            <MenuControlsContainer className="dark:bg-gray-600 dark:text-gray-50 rounded-lg p-1">
+              <MenuSelectHeading/>
+              <MenuDivider className="bg-[#1E293B]"  />
               <MenuButtonBold />
               <MenuButtonItalic />
-              {/* Add more controls of your choosing here */}
             </MenuControlsContainer>
           }
         />

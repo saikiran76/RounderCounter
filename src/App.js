@@ -5,20 +5,28 @@ import Counter from './components/Counter';
 import { Form } from './components/Form';
 import store from './utils/AppStore';
 import Editor from './components/Editor';
+import User from './components/User';
+import Bezier from './components/Beizer';
 
 function App() {
   return (
     <>
-      <div className='bg-[#0F172A] flex gap-2 mb-3'>
+      <div className='bg-[#0F172A] flex gap-2 mb-3 font-inter'>
         <Counter/>
         <Provider store={store}>
           <Editor/>
         </Provider>
-        {/* <Beizer/> */}
       </div>
+      
+      <div className='flex gap-2'>
       <Provider store={store}>
-          <Form/>
+        <User/>
+        <Form/>
       </Provider>
+      </div>
+
+      <Bezier/>
+      
     </>
   );
 }
