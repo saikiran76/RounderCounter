@@ -1,6 +1,8 @@
 import { useSelector, useDispatch } from "react-redux"
 import { setFormData, clearFormData, setUnsavedChanges } from "../utils/FormSlice";
 import { useEffect } from "react";
+import { Button } from "./Button";
+
 
 export const Form = () => {
     const dispatch = useDispatch();
@@ -86,8 +88,9 @@ export const Form = () => {
                 />
             </div>
 
-
-            <button type="submit" className="rounded-md bg-gray-800 text-gray-50 border-[#1B3D58] border-l border-r border-b border-t w-[5rem] p-3 hover:bg-[#36B6EE] duration-500">Save</button>
+            
+            {/* <button type="submit" className="rounded-md bg-gray-800 text-gray-50 border-[#1B3D58] border-l border-r border-b border-t w-[5rem] p-3 hover:bg-[#36B6EE] duration-500">Save</button> */}
+            <Button type="submit" name="Save" width="w-[5rem]" handler={handleSubmit}/>
         </form>
     );
 };
