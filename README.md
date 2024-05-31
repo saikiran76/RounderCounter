@@ -16,9 +16,11 @@ This is a Counter/Form application built using React which makes use of librarie
 <img width="3366" alt="Counter" src="https://github.com/saikiran76/RounderCounter/assets/80874246/4e03d1b1-e16a-474f-b7c8-a840aaefcf09">
 
 
-For more visit the official docs of Firebase: 
+For more visit the official docs of react-spring, Firebase, material-ui(mui-rte): 
+`https://www.react-spring.dev/docs/getting-started`
 `https://firebase.google.com/docs/auth/web/start?hl=en&authuser=0`
 `https://firebase.google.com/docs/database/web/start?hl=en&authuser=0`
+`https://www.npmjs.com/package/mui-rte`
 
 ## Report on Component Structure and Managament of states 
 ### Component Structure
