@@ -1,32 +1,21 @@
-import { Provider } from 'react-redux';
+import {
+  BrowserRouter,
+  Route,
+  Routes,
+} from "react-router-dom";
 import './App.css';
-// import { Beizer } from './components/Beizer';
-import Counter from './components/Counter';
-import { Form } from './components/Form';
-import store from './utils/AppStore';
-import Editor from './components/Editor';
-import User from './components/User';
-import Bezier from './components/Beizer';
+
+import Login from "./Pages/Login";
 
 function App() {
   return (
     <>
-      <div className='bg-[#0F172A] flex gap-2 mb-3 font-inter'>
-        <Counter/>
-        <Provider store={store}>
-          <Editor/>
-        </Provider>
-      </div>
-      
-      <div className='flex gap-2'>
-      <Provider store={store}>
-        <User/>
-        <Form/>
-      </Provider>
-      </div>
-
-      <Bezier/>
-      
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/signup" element={<Login/>} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
