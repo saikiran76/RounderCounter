@@ -7,7 +7,7 @@ const User = () =>{
    
 
     return (
-        <div className="m-5 w-[40%] p-[5em] rounded-lg border-[#1B3D58] border-l-[0.25rem] border-r-[0.25rem] border-t-[0.25rem] border-b-[0.25rem] font-inter shadow-[#F472B6] shadow-lg">
+        <div className="m-5 w-full lg:w-[40%] p-[2em] lg:p-[5em] rounded-lg border-[#1B3D58] border-l-[0.25rem] border-r-[0.25rem] border-t-[0.25rem] border-b-[0.25rem] font-inter shadow-[#F472B6] shadow-lg">
             <p className="p-3 text-gray-50 text-lg mx-auto border-[#36B6EE] border-l border-r border-t border-b rounded-lg m-3 text-center">
                 <span>User Data:</span>
                 {JSON.stringify({
@@ -16,11 +16,8 @@ const User = () =>{
                     "email": userData.email,
                 })}
             </p>
-            
             <Bar text="Auto-generated Id:" content={JSON.stringify({"userId": userData.userId})}/>
-
             <input name="name" type="name" placeholder="Name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#36B6EE] focus:border-[#36B6EE] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-50 dark:focus:ring-[#36B6EE] dark:focus:border-[#36B6EE] m-3 mx-auto" required />
-
             <Button name="Save" width="w-full" type="submit" handler={(e) => console.log(e)}/>
         </div>
     )

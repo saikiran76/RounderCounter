@@ -41,9 +41,9 @@ function Editor() {
   }, [editorState.unsavedChanges]);
 
   return (
-    <div className="w-full text-[#fff] border-[#1B3D58] border-l-[0.25rem] border-r-[0.25rem] border-t-[0.25rem] border-b-[0.25rem] overflow-hidden rounded-lg m-3 shadow-[#F472B6] shadow-lg">
+    <div className="w-full lg:w-[70%] text-[#fff] border-[#1B3D58] border-l-[0.25rem] border-r-[0.25rem] border-t-[0.25rem] border-b-[0.25rem] overflow-hidden rounded-lg m-3 shadow-[#F472B6] shadow-lg">
       <RichTextEditorProvider editor={editor}>
-        <RichTextField className="h-[30em]"
+        <RichTextField className="h-[20em] lg:h-[30em]"
           controls={
             <MenuControlsContainer className="dark:bg-gray-600 dark:text-gray-50 rounded-lg p-1">
               <MenuSelectHeading/>

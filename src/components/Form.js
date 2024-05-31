@@ -39,61 +39,23 @@ export const Form = () => {
     };
 
     return (
-        <form className="w-[55%] mx-auto border-[#1B3D58] border-l-[0.25rem] border-r-[0.25rem] border-t-[0.25rem] border-b-[0.25rem] p-[5em] rounded-lg shadow-[#F472B6] shadow-lg" onSubmit={handleSubmit}>
+        <form className="w-full lg:w-[55%] mx-auto border-[#1B3D58] border-l-[0.25rem] border-r-[0.25rem] border-t-[0.25rem] border-b-[0.25rem] p-[2em] lg:p-[5em] rounded-lg shadow-[#F472B6] shadow-lg" onSubmit={handleSubmit}>
             <div className="mb-5">
                 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-50">Name</label>
-                {/* <input 
-                    type="text" 
-                    name="name" 
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-50 dark:focus:ring-blue-500 dark:focus:border-blue-500" 
-                    placeholder="Kiran"
-                    value={data.name}
-                    required 
-                    onChange={handleChange} 
-                /> */}
                 <InputBox type="text" name="name" placeholder="Kiran" value={data.name} onChange={handleChange}/>
-                
             </div>
             <div className="mb-5">
                 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-50">Email</label>
-                {/* <input 
-                    type="email" 
-                    name="email"
-                    placeholder="kiran@gmail.com" 
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#36B6EE] focus:border-[#36B6EE] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-50 dark:focus:ring-[#36B6EE] dark:focus:border-[#36B6EE]" 
-                    value={data.email}
-                    onChange={handleChange} 
-                    required 
-                /> */}
                 <InputBox type="email" name="email" placeholder="ksknew76105@gmail.com" value={data.email} onChange={handleChange}/>
             </div>
             <div className="mb-5">
                 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-50">Phone</label>
-                {/* <input 
-                    type="text" 
-                    name="phone"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#36B6EE] focus:border-[#36B6EE] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-50 dark:focus:ring-[#36B6EE] dark:focus:border-[#36B6EE]" 
-                    placeholder="+91 9177814689"
-                    value={data.phone}
-                    onChange={handleChange} 
-                    required 
-                /> */}
                 <InputBox type="text" name="phone" placeholder="+91 9177814689" value={data.phone} onChange={handleChange} />
             </div>
             <div className="mb-5">
                 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-50">Address</label>
-                {/* <input 
-                    type="text" 
-                    name="address"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#36B6EE] focus:border-[#36B6EE] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-50 dark:focus:ring-[#36B6EE] dark:focus:border-[#36B6EE]" 
-                    placeholder="BalajiNagar"
-                    value={data.address}
-                    onChange={handleChange} 
-                    required 
-                /> */}
                 <InputBox type="text" name="address" placeholder="BalajiNagar" value={data.address} onChange={handleChange}/>
             </div>
-
             <Button type="submit" name="Save" width="w-[5rem]" handler={handleSubmit}/>
         </form>
     );
