@@ -20,6 +20,30 @@ For more visit the official docs of Firebase:
 `https://firebase.google.com/docs/auth/web/start?hl=en&authuser=0`
 `https://firebase.google.com/docs/database/web/start?hl=en&authuser=0`
 
+## Report on Component Structure and Managament of states 
+### Component Structure
+- Pages(Parent Components) : Home, Login
+- Home Page with following child components(along with small chunk resusable components)
+### Home Page Components
+- Counter: For counter functionality and react-spring animation
+- Form: For User data, also with Local storage functionality (global states & action dispatches)
+- Rich Text Editor: Text Editor with options Bold, italic and more built with Material UI
+- User Result component: Displays the result as JSON object
+- Beizer Footer: Footer section to showcase animations with Beizer curve easing (Back and Forth animations of Background Gradient) 
+### Bunch of Reusable Components
+- Input Field components for Log in Form and User Form
+- Button Component with hover effect
+- ...  
+
+### State Management Choices 
+- Global state management using Redux Toolkit for storing user data from the form as an object and also be used to display on Result component
+- login/signup management states in the 
+Login component for google provided auth and global states for Email/Password auth
+- count state for keeping track of Counter number along wih add, deduct and Reset Handler
+
+### Hooks Used for State management
+- useState (local state management) 
+- useSelector (for subscribing with components) and useDispatch(dispatching actions to store) for Global state management using RTK
 
 
 ## Snaps of the project
