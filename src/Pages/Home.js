@@ -1,5 +1,5 @@
 import { Provider } from 'react-redux';
-import './App.css';
+import '../App.css';
 // import { Beizer } from './components/Beizer';
 import Counter from '../components/Counter';
 import Editor from "../components/Editor"
