@@ -38,38 +38,12 @@ const Counter = () => {
         boxShadow: '0px 4px 6px #F472B6',
       }}
     >
-      {/* <p
-        className="border-[#36B6EE] text-gray-50 border-l border-r border-t border-b rounded-lg p-3 text-center font-bold text-xl bg-[#1E293B]"
-      >
-        {counter}
-      </p> */}
       <Bar content={counter}/>
       <h1 className="m-2 font-semibold text-center text-gray-50 text-2xl">Counter</h1>
       <div className="flex gap-2">
-        {/* <button
-          onClick={AddHandler}
-          className="rounded-md bg-gray-800 text-gray-50 border-[#1B3D58] border-l border-r border-b border-t w-[20%] p-3 hover:bg-[#36B6EE] duration-500"
-        >
-          +
-        </button> */}
         <Button name="+" handler={AddHandler} width="w-[20%]"/>
-
-        {/* <button
-          onClick={ResetHandler}
-          className="rounded-md bg-gray-800 text-gray-50 border-[#1B3D58] border-l border-r border-b border-t w-[60%] p-3 hover:bg-[#36B6EE] duration-500"
-        >
-          <h2>Reset</h2>
-        </button> */}
         <Button name="Reset" handler={ResetHandler} isOutlined width="w-[60%]" />
-        {/* <Button name="Reset" handler={ResetHandler} width="w-[60%]"/>
-        <button
-          onClick={DeductHandler}
-          className="rounded-md bg-gray-800 text-gray-50 border-[#1B3D58] border-l border-r border-b border-t w-[20%] p-3 hover:bg-[#36B6EE] duration-500"
-        >
-          -
-        </button> */}
         <Button name="-" handler={DeductHandler} width="w-[20%]"/>
-        
       </div>
     </animated.div>
   );
