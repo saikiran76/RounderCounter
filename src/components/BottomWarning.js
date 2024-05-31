@@ -1,13 +1,11 @@
-import { Link } from "react-router-dom"
-
-export function BottomWarning({label, buttonText, to}) {
-    return <div className="py-2 text-sm flex justify-center">
-      <div>
+export function BottomWarning({label, buttonText, handler}) {
+    return <div className="py-2 text-sm flex justify-center" onClick={handler}>
+      <div className="mr-2">
         {label}
       </div>
-      <Link className="pointer underline pl-1 cursor-pointer" to={to}>
+      <p className="pointer underline pl-1 cursor-pointer"> 
         {buttonText}
-      </Link>
+      </p>
     </div>
 }
   
