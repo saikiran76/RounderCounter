@@ -19,7 +19,7 @@ import { useEffect,  useRef } from "react";
 
 const Login = () => {
   const [username, setUsername] = useState("");
-  const [email, setEmail] = useState('');
+  const [mail, setMail] = useState('');
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState(null);
   const [value, setValue] = useState('');
@@ -107,7 +107,7 @@ const Login = () => {
           {!login && <InputBox ref={name} type="text" name="name" placeholder="Kiran" value={username} onChange={e => setUsername(e.target.value)} />}
 
           <label className="block mb-1 ml-1 text-xs font-medium text-gray-900 dark:text-gray-800">Email</label>
-          <InputBox ref={email} type="email" name="email" placeholder="kiran@gmail.com" value={} onChange={e => setEmail(e.target.value)} />
+          <InputBox ref={email} type="email" name="email" placeholder="kiran@gmail.com" value={mail} onChange={e => setMail(e.target.value)} />
 
           <label className="block mb-1 ml-1 text-xs font-medium text-gray-900 dark:text-gray-800">Password</label>
           <InputBox ref={pass} type="password" name="password" placeholder="123456" value={password} onChange={e => setPassword(e.target.value)} />
