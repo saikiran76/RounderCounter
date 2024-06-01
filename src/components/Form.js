@@ -25,7 +25,7 @@ export const Form = () => {
     const handleChange = (e) => {
         const { name, value } = e.target;
         dispatch(setFormData({ [name]: value }));
-        dispatch(setUnsavedChanges(true));
+        // dispatch(setUnsavedChanges(true)); - there is no need for dispatching action here to clear the form data for now
     };
 
     const handleSubmit = (e) => {
