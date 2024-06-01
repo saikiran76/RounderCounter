@@ -27,10 +27,9 @@ const Counter = () => {
   });
 
   return (
-    <animated.div className="font-inter w-[100%] lg:w-[60%]"
+    <animated.div className="font-inter w-[100%] lg:w-[60%] m-3"
       style={{
         ...colorAnimation,
-        margin: '20px',
         padding: '5em',
         borderRadius: '8px',
         border: '1px solid #1B3D58',
