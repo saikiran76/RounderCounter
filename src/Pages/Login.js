@@ -19,6 +19,7 @@ import { useEffect,  useRef } from "react";
 
 const Login = () => {
   const [username, setUsername] = useState("");
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState(null);
   const [value, setValue] = useState('');
@@ -102,11 +103,11 @@ const Login = () => {
           <h2 className="m-3 text-sm text-center">{!login ? "Create an account" : 'Welcome Back'}</h2>
           <Bar text={!login ? "Sign up with Google" : "Sign in"} handler={handleClick} margin="mb-2" content={<img src="https://image.similarpng.com/very-thumbnail/2020/06/Logo-google-icon-PNG.png" className="w-[2rem] rounded-2xl" alt="g" />} />
 
-          <label className="block mb-1 ml-1 text-xs font-medium text-gray-900 dark:text-gray-800">Name</label>
-          <InputBox ref={name} type="text" name="name" placeholder="Kiran" value={username} onChange={e => setUsername(e.target.value)} />
+          {!login && <label className="block mb-1 ml-1 text-xs font-medium text-gray-900 dark:text-gray-800">Name</label>}
+          {!login && <InputBox ref={name} type="text" name="name" placeholder="Kiran" value={username} onChange={e => setUsername(e.target.value)} />}
 
           <label className="block mb-1 ml-1 text-xs font-medium text-gray-900 dark:text-gray-800">Email</label>
-          <InputBox ref={email} type="email" name="email" placeholder="kiran@gmail.com" value={username} onChange={e => setUsername(e.target.value)} />
+          <InputBox ref={email} type="email" name="email" placeholder="kiran@gmail.com" value={} onChange={e => setEmail(e.target.value)} />
 
           <label className="block mb-1 ml-1 text-xs font-medium text-gray-900 dark:text-gray-800">Password</label>
           <InputBox ref={pass} type="password" name="password" placeholder="123456" value={password} onChange={e => setPassword(e.target.value)} />
